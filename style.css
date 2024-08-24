@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.main{
+    width: 100%;
+    height: 100%;
+}
+
+.top{
+    width: 100%;
+    height: 60%;
+    background-image: url(mountains.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.395);
+    position: relative;
+}
+
+.text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 10vw;
+    color: #fff;
+    position: absolute;
+    bottom: 40%;
+}
+
+.text-right{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.text-right i{
+    color: #fff;
+}
+
+.text-right p{
+    font-size: 13px;
+    width: 40%;
+}
+
+.text h1{
+    font-size: 5vw;
+    font-weight: 600;
+}
+
+.bottom{
+    width: 100%;
+    height: 40%;
+    /* background: lightcoral; */
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+}
+
+.bone{
+    width: 25%;
+    height: 100%;
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.bone p{
+    font-size: 12px;
+    margin-top: 20px
+}
+
+.btwo{
+    width: 25%;
+    height: 100%;
+    background-image: url(mountain-2.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+} 
+.bthree{
+    width: 20%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.bthree-top{
+    width: 100%;
+    height: 50%;
+    background: rgba(178, 176, 176, 0.979);
+    border-radius: 10px;
+    color: #fff;
+    padding: 20px;
+}
+
+.bthree-top p{
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.bthree-bottom{
+    width: 100%;
+    height: 50%;
+    background-image: url(mountain-3.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.bfour{
+    width: 30%;
+    height: 100%;
+    background: #fff;
+    color: #000;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.notf{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    align-items: center;
+}
+
+.notf .photo{
+    width: 40px;
+    height: 40px;
+    background-image: url(man-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.notf .photo2{
+    width: 40px;
+    height: 40px;
+    background-image: url(man-2.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.notf .photo3{
+    width: 40px;
+    height: 40px;
+    background-image: url(man-3.jpeg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.notf p{
+    width: 86%;
+    font-size: 12px;
+}
+
+@media(max-width: 500px){
+
+    
+    .text{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        position: absolute;
+        top: 10%;
+    }
+ 
+    .text h1{
+        font-size: 40px;
+        /* margin-top: 50px; */
+    }
+
+    .text-right{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        width: 100%;
+        height: 100%;
+        padding-top: 20px;
+    }
+    .text-right p{
+        font-size: 13px;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    .icons{
+        padding-top: 30px;
+        font-size: 20px;
+    }
+    
+    .bottom{
+        height: 60%;
+        /* width: 100%; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .bone{
+        width: 100%;
+    }
+    .btwo{
+        width: 100%;
+    }
+
+    .bottom .bthree{
+        width: 100%;
+        height: 100%;
+    }
+    .bfour{
+        width: 100%;
+    }
+
+}
